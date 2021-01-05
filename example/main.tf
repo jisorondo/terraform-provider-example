@@ -2,13 +2,13 @@ terraform {
     required_providers {
         file = {
             source = "adamcodes.net/terraform-provider-example/file"
-            version = ">= 0.0.8"
+            version = ">= 0.0.1"
         }
     }
 }
 
 provider "file" {
-    directory = "${module.path}/"
+    directory = "${path.module}/"
 }
 
 data "file_data_source" "source" {
