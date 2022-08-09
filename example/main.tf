@@ -1,7 +1,7 @@
 terraform {
     required_providers {
         file = {
-            source = "adamcodes.net/terraform-provider-example/file"
+            source = "xtfe.havananet.us/havananet/filetest"
             version = ">= 0.0.1"
         }
     }
